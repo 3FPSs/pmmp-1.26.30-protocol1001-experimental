@@ -12,6 +12,22 @@ Do not present this build as an official PocketMine-MP release.
 
 This build was originally used and tested in the context of the **BladeOfSteel** Minecraft Bedrock server. Because of that, it may contain changes or debugging behavior that differs from upstream PocketMine-MP.
 
+## Current local status
+
+The latest local hotfix tested successfully in the BladeOfSteel environment:
+
+```text
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
+```
+
+SHA256:
+
+```text
+37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
+```
+
+This does not make it an official or production-ready PMMP release. It only documents the latest local testing result.
+
 ## Purpose
 
 The purpose of this repository is to help developers inspect and test protocol 1001 behavior, especially around:
@@ -21,7 +37,8 @@ The purpose of this repository is to help developers inspect and test protocol 1
 - BedrockData compatibility;
 - inventory packets;
 - player item interactions;
-- serverbound item use packets.
+- serverbound item use packets;
+- entity/projectile rendering.
 
 ## License responsibility
 
