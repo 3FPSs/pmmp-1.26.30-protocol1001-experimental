@@ -20,7 +20,11 @@ Recommended filename:
 PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar
 ```
 
-## Latest successful local hotfix
+## Latest v3 hotfix
+
+Release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v3-hotfix
 
 Filename:
 
