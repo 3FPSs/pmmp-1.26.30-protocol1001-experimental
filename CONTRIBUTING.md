@@ -6,6 +6,19 @@ Thanks for helping test this experimental build.
 
 This repository is not an official PocketMine-MP repository. Contributions should be focused on investigation, documentation and clean patches that may later be proposed upstream.
 
+## Current focus after v3
+
+The v3 local hotfix was reported to restore item interactions and projectile/entity rendering.
+
+Useful next contributions include:
+
+- longer multiplayer testing;
+- performance/TPS reports;
+- plugin compatibility reports;
+- source patches or diffs;
+- review of the `NetworkSession` diagnostic packet block removal;
+- review of protocol 1001 item-use/action mappings.
+
 ## Good contributions
 
 Useful contributions include:
@@ -61,6 +74,7 @@ paste logs here
 InventoryTransactionPacket
 ItemStackRequestPacket
 InGamePacketHandler
+NetworkSession
 ```
 ```
 
