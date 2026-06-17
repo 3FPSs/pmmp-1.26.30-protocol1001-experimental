@@ -16,7 +16,7 @@ Please do not report this repository as an official PocketMine-MP release. If us
 
 ## Download
 
-Experimental build release:
+Original experimental build release:
 
 https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001
 
@@ -26,13 +26,17 @@ Original build SHA256:
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
 ```
 
-Latest local hotfix tested successfully:
+Latest v3 hotfix release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v3-hotfix
+
+Latest v3 hotfix filename:
 
 ```text
 PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
 ```
 
-Latest local hotfix SHA256:
+Latest v3 hotfix SHA256:
 
 ```text
 37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
@@ -90,6 +94,9 @@ docs/TESTS.md
 docs/DEVELOPER_NOTES.md
 docs/EXTERNAL_FIXES.md
 docs/SOURCE_EXTRACTION.md
+docs/HOTFIX_V3_SUMMARY.md
+docs/RELEASE_NOTES_V3.md
+docs/UPLOAD_V3_RELEASE.md
 ```
 
 ## Upstream etiquette
