@@ -34,6 +34,8 @@ Use this checklist to test protocol 1001 behavior.
 
 ## Item interaction tests
 
+Reported working in v3 local test:
+
 - Eat apple/bread.
 - Throw snowball/ender pearl.
 - Use splash potion.
@@ -42,6 +44,8 @@ Use this checklist to test protocol 1001 behavior.
 - Use fireworks.
 - Use goat horn.
 - Use wind charge if available.
+
+Still recommended to repeat these tests under multiplayer/load conditions.
 
 ## Debug targets
 
@@ -62,6 +66,8 @@ Log these packets/classes while testing item interaction:
 - Players move around each other.
 - Players place/break blocks near each other.
 - Players use projectiles near each other.
+- Players fight each other.
+- Players teleport between map regions.
 
 ## Performance tests
 
@@ -69,3 +75,13 @@ Log these packets/classes while testing item interaction:
 - Monitor memory.
 - Watch for increasing garbage collection time.
 - Relog multiple times.
+- Keep the server running for at least 30-60 minutes.
+
+## Regression tests after v3
+
+- Confirm projectiles render for other players, not only the shooter.
+- Confirm ender pearl teleports correctly under latency.
+- Confirm potions apply effects and show client-side splash visuals.
+- Confirm arrows hit entities/players.
+- Confirm item interactions do not duplicate items.
+- Confirm no old render crash returns after entity packets were unblocked.
