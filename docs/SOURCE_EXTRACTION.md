@@ -26,21 +26,30 @@ Known SHA256:
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
 ```
 
-## Extract using PHP
+## Extract using PHP on Windows PowerShell
 
-On Windows PowerShell:
+Important: in PowerShell, use single quotes around the PHP code. If you use double quotes, PowerShell tries to interpret `$p` as a PowerShell variable.
+
+Example assuming the PHAR is in your Downloads folder:
 
 ```powershell
-mkdir C:\BladePMMPSource
+mkdir C:\BladePMMPSource -Force
 cd C:\BladePMMPSource
-copy C:\path\to\PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar .\PocketMine-MP.phar
-php -r "$p = new Phar('PocketMine-MP.phar'); $p->extractTo('PocketMine-MP_build2608_src', null, true);"
+Copy-Item "C:\Users\SUPER-MAQUINA\Downloads\PocketMine-MP.phar" ".\PocketMine-MP.phar" -Force
+php -r '$p = new Phar("PocketMine-MP.phar"); $p->extractTo("PocketMine-MP_build2608_src", null, true);'
+```
+
+If the PHAR is one folder above the current folder, use:
+
+```powershell
+Copy-Item "..\PocketMine-MP.phar" ".\PocketMine-MP.phar" -Force
+php -r '$p = new Phar("PocketMine-MP.phar"); $p->extractTo("PocketMine-MP_build2608_src", null, true);'
 ```
 
 If PHP blocks PHAR operations, try:
 
 ```powershell
-php -d phar.readonly=0 -r "$p = new Phar('PocketMine-MP.phar'); $p->extractTo('PocketMine-MP_build2608_src', null, true);"
+php -d phar.readonly=0 -r '$p = new Phar("PocketMine-MP.phar"); $p->extractTo("PocketMine-MP_build2608_src", null, true);'
 ```
 
 ## Create a source ZIP
