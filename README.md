@@ -14,6 +14,24 @@ This build was modified and tested for a private server environment first, so it
 
 Please do not report this repository as an official PocketMine-MP release. If useful technical findings are produced here, they should be converted into clean patches or pull requests for the upstream project.
 
+## Download
+
+Experimental build release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001
+
+Recommended filename:
+
+```text
+PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar
+```
+
+Known SHA256 for the tested PHAR:
+
+```text
+ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
+```
+
 ## Why this exists
 
 Minecraft Bedrock protocol updates can break login, chunks, inventories, item interactions and world rendering in server software. This repository gathers test information around a working experimental build for protocol 1001.
@@ -46,16 +64,6 @@ Known issues still under investigation:
 - Food consumption may visually update and then revert.
 - Goat horn sound/use behavior may not work correctly.
 - Some vanilla item interactions may still require protocol/handler fixes.
-
-## Build information
-
-Known SHA256 for the tested PHAR:
-
-```text
-ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
-```
-
-The build artifact should be uploaded separately under GitHub Releases or in a `builds/` folder if repository size permits.
 
 ## Developer focus
 
