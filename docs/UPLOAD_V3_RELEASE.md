@@ -1,5 +1,11 @@
 # Upload v3 hotfix release
 
+Status: completed.
+
+Release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v3-hotfix
+
 The latest local test succeeded with:
 
 ```text
@@ -12,7 +18,7 @@ SHA256:
 37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
 ```
 
-## Recommended GitHub Release
+## Release information
 
 Tag:
 
@@ -26,26 +32,17 @@ Title:
 PocketMine-MP 1.26.30 Protocol 1001 Experimental Build 2608 - v3 Hotfix
 ```
 
-Upload asset:
+Asset:
 
 ```text
 PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
 ```
 
-## Suggested release notes
-
-```markdown
-# PocketMine-MP 1.26.30 / Protocol 1001 Experimental Build 2608 - v3 Hotfix
+## Summary
 
 This is an **unofficial experimental PocketMine-MP build** targeting Minecraft Bedrock **1.26.30 / protocol 1001**.
 
 This is **not an official PMMP release** and should be treated as a community testing build.
-
-## SHA256
-
-```text
-37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
-```
 
 ## What changed from the previous build
 
@@ -71,4 +68,3 @@ This is **not an official PMMP release** and should be treated as a community te
 - plugin compatibility testing;
 - source/diff publication before upstream review;
 - TPS and memory testing.
-```
