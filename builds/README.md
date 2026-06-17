@@ -1,8 +1,12 @@
 # Builds
 
-Place experimental build artifacts here or upload them under GitHub Releases.
+Experimental build artifacts are published under GitHub Releases.
 
 ## Current tested PHAR
+
+Release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001
 
 Known SHA256:
 
@@ -18,7 +22,7 @@ PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar
 
 ## Recommendation
 
-Prefer GitHub Releases for PHAR downloads when possible, and keep this folder for metadata/checksums only if the binary is too large or if the source is not yet ready.
+Prefer GitHub Releases for PHAR downloads. Keep this folder for metadata/checksums and notes.
 
 ## License note
 
