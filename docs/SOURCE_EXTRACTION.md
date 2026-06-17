@@ -14,16 +14,28 @@ Before asking upstream PocketMine-MP maintainers to review anything, the changes
 - The tested PHAR file.
 - Optional but recommended: Git.
 
-## Recommended filename
+## Recommended original filename
 
 ```text
 PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar
 ```
 
-Known SHA256:
+Original PHAR SHA256:
 
 ```text
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
+```
+
+## Latest successful local hotfix filename
+
+```text
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
+```
+
+Hotfix SHA256:
+
+```text
+37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
 ```
 
 ## Extract using PHP on Windows PowerShell
@@ -108,16 +120,12 @@ Do not upload:
 - secrets, tokens or authentication data;
 - server-specific private data.
 
-## Next review target
-
-Current known remaining issue area:
+## Main v3 review targets
 
 ```text
-InventoryTransactionPacket
-UseItemTransactionData
-ReleaseItemTransactionData
-ItemStackRequestPacket
-PlayerActionPacket
-PlayerAuthInputPacket
 InGamePacketHandler
+NetworkSession
+UseItemTransactionData
+UseItemOnEntityTransactionData
+Entity/projectile packet rendering
 ```
