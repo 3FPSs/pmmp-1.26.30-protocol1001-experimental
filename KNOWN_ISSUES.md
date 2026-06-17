@@ -2,58 +2,32 @@
 
 This file tracks issues observed in the current experimental build.
 
-## Confirmed / observed
+## Resolved in local hotfix test
 
-### Item use in air
+The following issues were reported as working correctly after applying the interaction + entity render hotfix build:
 
-Using items in air may not work correctly.
-
-Affected examples:
-
-- throwable items;
+- food consumption;
+- ender pearl usage/trajectory;
+- bow and arrow;
+- trident;
 - splash potions;
 - wind charge;
-- fireworks;
-- goat horn usage/sound.
+- goat horn usage/sound;
+- other item interactions tested by the BladeOfSteel environment.
 
-Likely area:
+The successful test indicates that two areas were important:
 
-- `UseItemTransactionData`
-- `ReleaseItemTransactionData`
-- `ItemStackRequestPacket`
-- `PlayerActionPacket`
-- `PlayerAuthInputPacket`
-- `InGamePacketHandler`
+1. protocol 1001 item-use-in-air mapping;
+2. allowing entity/projectile packets to render client-side.
 
-### Food consumption desync
+## Previously observed issues
 
-Food can visually regenerate the hunger bar client-side, but the hunger state may revert afterward.
+These were previously observed before the hotfix:
 
-This suggests client prediction is occurring, but the server may not be confirming the action correctly.
-
-Likely area:
-
-- `ItemStackRequestPacket`
-- item consume handling;
-- inventory/food state synchronization.
-
-### Projectile-like behavior
-
-Items that should spawn or release entities may fail to do so.
-
-Affected examples:
-
-- bow/arrow;
-- trident;
-- splash potion;
-- fireworks;
-- wind charge.
-
-Likely area:
-
-- release item transaction handling;
-- item use-in-air action handling;
-- projectile entity creation.
+- item use in air did not work correctly;
+- throwable items/projectiles did not launch/render correctly;
+- food consumption visually updated and then reverted;
+- goat horn/fireworks/trident/potions/wind charge had issues.
 
 ## Confirmed working
 
@@ -62,15 +36,17 @@ Likely area:
 - Chunks with blocks can render.
 - Basic container interfaces can open.
 - Block placement works.
+- Food and item interactions work in the latest local hotfix test.
+- Projectile/entity visuals work in the latest local hotfix test.
 
 ## Needs more testing
 
-- Breaking blocks.
-- Teleporting long distances.
-- Nether/End or additional dimensions if used.
-- Mobs/entities.
-- Armor/equipment.
+- Longer multiplayer sessions.
+- More maps and dimensions.
+- Mobs/entities under load.
+- Armor/equipment edge cases.
 - Creative inventory.
 - Crafting flows.
 - Resource packs.
 - Multi-player testing with 5+ clients.
+- TPS/memory stability over time.
