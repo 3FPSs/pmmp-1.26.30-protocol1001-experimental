@@ -1,4 +1,8 @@
-# Release notes - v3 local hotfix
+# Release notes - v3 hotfix
+
+## Release
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v3-hotfix
 
 ## Build
 
@@ -14,7 +18,7 @@ SHA256:
 
 ## Summary
 
-This local hotfix was reported as working correctly in the BladeOfSteel test environment.
+This hotfix was reported as working correctly in the BladeOfSteel test environment.
 
 ## Fixes included
 
