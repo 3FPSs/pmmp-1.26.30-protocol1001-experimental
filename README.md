@@ -20,16 +20,22 @@ Experimental build release:
 
 https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001
 
-Recommended filename:
-
-```text
-PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar
-```
-
-Known SHA256 for the tested PHAR:
+Original build SHA256:
 
 ```text
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
+```
+
+Latest local hotfix tested successfully:
+
+```text
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
+```
+
+Latest local hotfix SHA256:
+
+```text
+37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
 ```
 
 ## Why this exists
@@ -55,29 +61,21 @@ Confirmed working in local BladeOfSteel tests:
 - Chunks with blocks can load.
 - Basic containers such as chests and anvils can open.
 - Block placement works.
-
-Known issues still under investigation:
-
-- Item use in air may not work correctly.
-- Throwable items may not launch correctly.
-- Bows, tridents, potions, wind charges and fireworks may have issues.
-- Food consumption may visually update and then revert.
-- Goat horn sound/use behavior may not work correctly.
-- Some vanilla item interactions may still require protocol/handler fixes.
+- Food consumption works in the latest hotfix test.
+- Ender pearl, wind charge, bow/arrow, trident, potions, goat horn and other tested items work correctly in the latest hotfix test.
+- Projectile/entity render and trajectory work correctly in the latest hotfix test.
 
 ## Developer focus
 
-The remaining issues appear to be related mainly to player interaction packets, especially:
+The successful local hotfix suggests the important areas were:
 
-- `InventoryTransactionPacket`
-- `UseItemTransactionData`
-- `ReleaseItemTransactionData`
-- `ItemStackRequestPacket`
-- `PlayerActionPacket`
-- `PlayerAuthInputPacket`
-- `InGamePacketHandler`
-
-Chunk rendering and basic block placement appear to be mostly functional in current testing.
+- protocol 1001 item-use-in-air mapping;
+- entity/projectile packet rendering;
+- `InventoryTransactionPacket`;
+- `UseItemTransactionData`;
+- `UseItemOnEntityTransactionData`;
+- `InGamePacketHandler`;
+- `NetworkSession` packet filtering/debug code.
 
 ## Repository structure
 
@@ -90,6 +88,8 @@ CONTRIBUTING.md
 builds/README.md
 docs/TESTS.md
 docs/DEVELOPER_NOTES.md
+docs/EXTERNAL_FIXES.md
+docs/SOURCE_EXTRACTION.md
 ```
 
 ## Upstream etiquette
