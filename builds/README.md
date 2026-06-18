@@ -20,7 +20,34 @@ Recommended filename:
 PocketMine-MP_1.26.30_protocol1001_experimental_build2608.phar
 ```
 
-## Latest v3 hotfix
+## Latest tested playable build: v4 NODEBUG
+
+Filename:
+
+```text
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v4_NODEBUG.phar
+```
+
+SHA256:
+
+```text
+126A40DE6BBE3F08559F9FC74FBF10F9F5DB88D3A80BF2AA7D3061AEE0C05868
+```
+
+Status:
+
+- tested as playable in the BladeOfSteel environment;
+- food works;
+- ender pearl works;
+- wind charge works;
+- bow/arrow works;
+- trident works;
+- potions work;
+- goat horn works;
+- projectile/entity trajectory/render works;
+- leftover v3 disconnect debug warning removed.
+
+## Previous v3 hotfix
 
 Release:
 
@@ -37,17 +64,6 @@ SHA256:
 ```text
 37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
 ```
-
-Status:
-
-- food works;
-- ender pearl works;
-- wind charge works;
-- bow/arrow works;
-- trident works;
-- potions work;
-- goat horn works;
-- projectile/entity trajectory/render works.
 
 ## Recommendation
 
