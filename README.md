@@ -26,17 +26,23 @@ Original build SHA256:
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
 ```
 
-Latest v3 hotfix release:
+Latest tested playable build:
+
+```text
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v4_NODEBUG.phar
+```
+
+Latest tested playable build SHA256:
+
+```text
+126A40DE6BBE3F08559F9FC74FBF10F9F5DB88D3A80BF2AA7D3061AEE0C05868
+```
+
+Previous v3 hotfix release:
 
 https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v3-hotfix
 
-Latest v3 hotfix filename:
-
-```text
-PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
-```
-
-Latest v3 hotfix SHA256:
+Previous v3 hotfix SHA256:
 
 ```text
 37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
@@ -68,6 +74,7 @@ Confirmed working in local BladeOfSteel tests:
 - Food consumption works in the latest hotfix test.
 - Ender pearl, wind charge, bow/arrow, trident, potions, goat horn and other tested items work correctly in the latest hotfix test.
 - Projectile/entity render and trajectory work correctly in the latest hotfix test.
+- v4 removes the leftover disconnect debug warning from v3.
 
 ## Developer focus
 
@@ -95,8 +102,11 @@ docs/DEVELOPER_NOTES.md
 docs/EXTERNAL_FIXES.md
 docs/SOURCE_EXTRACTION.md
 docs/HOTFIX_V3_SUMMARY.md
+docs/HOTFIX_V4_SUMMARY.md
 docs/RELEASE_NOTES_V3.md
+docs/RELEASE_NOTES_V4.md
 docs/UPLOAD_V3_RELEASE.md
+docs/UPLOAD_V4_RELEASE.md
 ```
 
 ## Upstream etiquette
