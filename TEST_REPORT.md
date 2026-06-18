@@ -17,15 +17,29 @@ Known SHA256 for the original tested PHAR:
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
 ```
 
-## Interaction/entity render hotfix test
+## Latest tested playable build
 
-Local hotfix tested by BladeOfSteel:
+Latest build tested by BladeOfSteel:
+
+```text
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v4_NODEBUG.phar
+```
+
+SHA256:
+
+```text
+126A40DE6BBE3F08559F9FC74FBF10F9F5DB88D3A80BF2AA7D3061AEE0C05868
+```
+
+v4 is based on the successful v3 hotfix and removes the leftover disconnect debug warning from console output.
+
+## Previous v3 hotfix test
 
 ```text
 PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
 ```
 
-Hotfix SHA256:
+SHA256:
 
 ```text
 37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
@@ -91,12 +105,25 @@ Reported working:
 - item/projectile render behavior;
 - entity/projectile visual travel.
 
+### Console output
+
+Status: improved in v4.
+
+The leftover v3 warning:
+
+```text
+[Blade 26.30 Debug] Client disconnected. Last outgoing packets: ...
+```
+
+was removed from the v4 build.
+
 ## Important fix notes
 
 The latest successful test included:
 
 1. item-use-in-air mapping for protocol 1001;
-2. entity/projectile packet render restoration.
+2. entity/projectile packet render restoration;
+3. removal of noisy disconnect debug output.
 
 The second point was important because a prior diagnostic build still blocked entity packets such as `AddActorPacket`, `SetActorDataPacket` and `MoveActorAbsolutePacket`, which prevented projectile visuals from rendering client-side.
 
