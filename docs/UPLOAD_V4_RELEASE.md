@@ -1,5 +1,11 @@
 # Upload v4 NODEBUG release
 
+Status: completed.
+
+Release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v4-nodebug
+
 The latest tested/playable build is:
 
 ```text
@@ -12,7 +18,7 @@ SHA256:
 126A40DE6BBE3F08559F9FC74FBF10F9F5DB88D3A80BF2AA7D3061AEE0C05868
 ```
 
-## Recommended GitHub Release
+## GitHub Release
 
 Tag:
 
@@ -26,13 +32,13 @@ Title:
 PocketMine-MP 1.26.30 Protocol 1001 Experimental Build 2608 - v4 NODEBUG
 ```
 
-Upload asset:
+Asset:
 
 ```text
 PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v4_NODEBUG.phar
 ```
 
-## Suggested release notes
+## Release notes
 
 ```markdown
 # PocketMine-MP 1.26.30 / Protocol 1001 Experimental Build 2608 - v4 NODEBUG
