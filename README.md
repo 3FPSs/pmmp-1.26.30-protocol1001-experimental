@@ -26,6 +26,10 @@ Original build SHA256:
 ED8F8B735BE3934C3B3E85B87F20208FD69199F9680E00AAC1ECE982048DD0
 ```
 
+Latest tested playable build release:
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v4-nodebug
+
 Latest tested playable build:
 
 ```text
