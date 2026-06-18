@@ -1,5 +1,9 @@
 # Release notes - v4 NODEBUG
 
+## Release
+
+https://github.com/3FPSs/pmmp-1.26.30-protocol1001-experimental/releases/tag/build2608-protocol1001-v4-nodebug
+
 ## Build
 
 ```text
