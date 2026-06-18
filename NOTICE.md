@@ -14,16 +14,16 @@ This build was originally used and tested in the context of the **BladeOfSteel**
 
 ## Current local status
 
-The latest local hotfix tested successfully in the BladeOfSteel environment:
+The latest local build tested/playable in the BladeOfSteel environment:
 
 ```text
-PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v3.phar
+PMMP_INTERACTIONS_ENTITYRENDER_HOTFIX_build2608_v4_NODEBUG.phar
 ```
 
 SHA256:
 
 ```text
-37B4893FF0DF2A8F6D7219CB550B935792592FC353E74694E099CE583ADE936C
+126A40DE6BBE3F08559F9FC74FBF10F9F5DB88D3A80BF2AA7D3061AEE0C05868
 ```
 
 This does not make it an official or production-ready PMMP release. It only documents the latest local testing result.
